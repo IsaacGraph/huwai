@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list no-lines>
+        <ion-item>
+            <ion-label floating>用户名</ion-label>
+            <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>密码</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block (click)="login()">登录</button>
+    <p class="extro-info">
+        <span (click)="gotoRegister()">我要注册</span>
+        <span (click)="alert('请致电18435185936更改')">忘记密码?</span>
+    </p>
+</ion-content>

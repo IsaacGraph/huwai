@@ -1,0 +1,16 @@
+page-contact {
+    ion-content {
+        * { padding: 0; margin: 0; word-break: break-all; word-wrap: break-word; }
+        img { max-width: 100%; }
+        ul { list-style: inside; }
+        ol { list-style: inside; }
+        a { text-decoration: none; color: blue; }
+        blockquote { border-left: 5px solid #eee; padding: 5px; background: #eea; }
+
+        .bd { display: flex; width: 100%; flex-direction: row; flex-shrink: none; }
+        .bd .edit { flex: 1; height: 1000px; padding: 20px; font-size: 16px; line-height: 1.6em; }
+        .bd .output { flex: 1; padding: 20px; line-height: 1.6em; }
+        .bd .output * { margin: 5px; }
+
+    }
+}

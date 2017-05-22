@@ -1,0 +1,33 @@
+news-page {
+    .item {
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #EEE;
+    }
+    .item .img {
+        width: 50%;
+        float: left;
+    }
+    .item .img img {
+        width: 100%;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    .item .intro {
+        float: right;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 10px;
+    }
+    .item .intro .title {
+        font-size: 20px;
+    }
+    .item .intro .time {
+        margin-top: 10px;
+        color: #dcdcdc;
+    }
+    .item .intro .contents { margin-top: 20px; }
+}

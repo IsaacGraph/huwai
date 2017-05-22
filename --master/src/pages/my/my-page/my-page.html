@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>我的</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list no-lines>
+        <button ion-item>
+            <img item-left src={{info.avatar}}>
+            <h2>{{info.name}}</h2>
+            <p>{{info.intro}}</p>
+        </button>
+        <ion-item-group>
+            <ion-item-divider color="light"></ion-item-divider>
+            <button ion-item>
+                <ion-icon name="leaf-outline" item-left></ion-icon>
+                我的发布
+            </button>
+            <button ion-item>
+                <ion-icon name="ios-attach-outline" item-left></ion-icon>
+                收藏
+            </button>
+            <button ion-item>
+                <ion-icon name="md-heart-outline" item-left></ion-icon>
+                喜欢
+            </button>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item-divider color="light"></ion-item-divider>
+            <button ion-item>
+                <ion-icon name="ios-information-circle-outline" item-left></ion-icon>
+                消息
+            </button>
+        </ion-item-group>
+    </ion-list>
+    <button ion-button block color="danger" (click)="logout()">注销用户</button>
+</ion-content>

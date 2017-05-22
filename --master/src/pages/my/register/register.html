@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>注册</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list no-lines>
+        <img class="avatar" id="avatar" (click)="changeAvatar()" src={{img_src}} alt="">
+        <ion-item>
+            <ion-label floating>用户名</ion-label>
+            <ion-input color="red" type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+      <ion-item>
+            <ion-label floating>密码</ion-label>
+            <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>确认密码</ion-label>
+            <ion-input type="password" [(ngModel)]="password_again"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>个人介绍</ion-label>
+            <ion-textarea type="password" row="5" [(ngModel)]="intro"></ion-textarea>
+      </ion-item>
+      <ion-item>
+            <ion-label floating>电话</ion-label>
+            <ion-input type="password" [(ngModel)]="phone"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block color="secondary" (click)="register()">注册</button>
+</ion-content>

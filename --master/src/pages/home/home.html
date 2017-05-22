@@ -1,0 +1,14 @@
+<!-- author: 宣志
+intro: 用Menu来切换不同的新闻主题 -->
+<div padding>
+    <ion-menu [content]="mycontent">
+      <ion-content>
+          <ion-list no-lines>
+            <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+              {{ item }}
+            </button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-nav #mycontent [root]="rootPage"></ion-nav>
+</div>
